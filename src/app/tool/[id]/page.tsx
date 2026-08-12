@@ -19,6 +19,18 @@ import QrCodeGeneratorTool from "@/components/tools/QrCodeGeneratorTool";
 import Base64Tool from "@/components/tools/Base64Tool";
 import SerpSimulatorTool from "@/components/tools/SerpSimulatorTool";
 import ReadabilityCheckerTool from "@/components/tools/ReadabilityCheckerTool";
+import ParaphrasingTool from "@/components/tools/ParaphrasingTool";
+import AiContentDetectorTool from "@/components/tools/AiContentDetectorTool";
+import TextSummarizerTool from "@/components/tools/TextSummarizerTool";
+import ArticleRewriterTool from "@/components/tools/ArticleRewriterTool";
+import AiEssayWriterTool from "@/components/tools/AiEssayWriterTool";
+import AiStoryGeneratorTool from "@/components/tools/AiStoryGeneratorTool";
+import AiEmailWriterTool from "@/components/tools/AiEmailWriterTool";
+import AiCodeGeneratorTool from "@/components/tools/AiCodeGeneratorTool";
+import AiChatbotTool from "@/components/tools/AiChatbotTool";
+import AiTranslatorTool from "@/components/tools/AiTranslatorTool";
+import AiTitleGeneratorTool from "@/components/tools/AiTitleGeneratorTool";
+import GrammarCheckerTool from "@/components/tools/GrammarCheckerTool";
 
 const toolComponents: Record<string, React.ComponentType> = {
   "word-counter": WordCounterTool,
@@ -38,6 +50,18 @@ const toolComponents: Record<string, React.ComponentType> = {
   "base64-encoder": Base64Tool,
   "serp-simulator": SerpSimulatorTool,
   "readability-checker": ReadabilityCheckerTool,
+  "paraphrasing-tool": ParaphrasingTool,
+  "ai-content-detector": AiContentDetectorTool,
+  "text-summarizer": TextSummarizerTool,
+  "article-rewriter": ArticleRewriterTool,
+  "ai-essay-writer": AiEssayWriterTool,
+  "ai-story-generator": AiStoryGeneratorTool,
+  "ai-email-writer": AiEmailWriterTool,
+  "ai-code-generator": AiCodeGeneratorTool,
+  "ai-chatbot": AiChatbotTool,
+  "ai-translator": AiTranslatorTool,
+  "ai-title-generator": AiTitleGeneratorTool,
+  "grammar-checker": GrammarCheckerTool,
 };
 
 function PlaceholderTool({ tool }: { tool: (typeof tools)[0] }) {
