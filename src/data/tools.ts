@@ -33,9 +33,9 @@ export const categories: Category[] = [
 export const tools: Tool[] = [
   // Text Analysis Tools
   { id: "word-counter", name: "Word Counter", description: "Count words, characters, sentences, and paragraphs in your text.", category: "text-analysis", icon: "Hash", popular: true },
-  { id: "grammar-checker", name: "Grammar Checker", description: "Check and fix grammar, spelling, and punctuation errors.", category: "text-analysis", icon: "CheckCircle", popular: true, apiRequired: "LanguageTool API (free)" },
+  { id: "grammar-checker", name: "Grammar Checker", description: "Check and fix grammar, spelling, and punctuation errors.", category: "text-analysis", icon: "CheckCircle", popular: true, apiRequired: "Claude AI" },
   { id: "readability-checker", name: "Readability Checker", description: "Analyze text readability with Flesch-Kincaid and other scores.", category: "text-analysis", icon: "BookOpen" },
-  { id: "text-summarizer", name: "Text Summarizer", description: "Automatically summarize long articles and text content.", category: "text-analysis", icon: "AlignLeft", apiRequired: "OpenAI API or similar LLM" },
+  { id: "text-summarizer", name: "Text Summarizer", description: "Automatically summarize long articles and text content.", category: "text-analysis", icon: "AlignLeft", apiRequired: "Claude AI" },
   { id: "sentence-counter", name: "Sentence Counter", description: "Count the number of sentences in your text.", category: "text-analysis", icon: "List" },
   { id: "word-frequency-counter", name: "Word Frequency Counter", description: "Find the most frequently used words in your text.", category: "text-analysis", icon: "BarChart3" },
   { id: "character-counter", name: "Character Counter", description: "Count characters with and without spaces.", category: "text-analysis", icon: "Type" },
@@ -44,9 +44,9 @@ export const tools: Tool[] = [
 
   // Plagiarism Tools
   { id: "plagiarism-checker", name: "Plagiarism Checker", description: "Detect duplicate and plagiarized content in your writing.", category: "plagiarism", icon: "ShieldCheck", popular: true, apiRequired: "Copyscape API or custom search API" },
-  { id: "ai-content-detector", name: "AI Content Detector", description: "Detect AI-generated content in text passages.", category: "plagiarism", icon: "Bot", popular: true, apiRequired: "OpenAI API or GPTZero API" },
-  { id: "paraphrasing-tool", name: "Paraphrasing Tool", description: "Rewrite and rephrase text while keeping the meaning.", category: "plagiarism", icon: "RefreshCw", popular: true, apiRequired: "OpenAI API or similar LLM" },
-  { id: "article-rewriter", name: "Article Rewriter", description: "Automatically rewrite articles with different wording.", category: "plagiarism", icon: "RotateCw", apiRequired: "OpenAI API or similar LLM" },
+  { id: "ai-content-detector", name: "AI Content Detector", description: "Detect AI-generated content in text passages.", category: "plagiarism", icon: "Bot", popular: true, apiRequired: "Claude AI" },
+  { id: "paraphrasing-tool", name: "Paraphrasing Tool", description: "Rewrite and rephrase text while keeping the meaning.", category: "plagiarism", icon: "RefreshCw", popular: true, apiRequired: "Claude AI" },
+  { id: "article-rewriter", name: "Article Rewriter", description: "Automatically rewrite articles with different wording.", category: "plagiarism", icon: "RotateCw", apiRequired: "Claude AI" },
   { id: "duplicate-content-checker", name: "Duplicate Content Checker", description: "Find duplicate content across the web.", category: "plagiarism", icon: "Copy", apiRequired: "Google Custom Search API" },
 
   // SEO Tools
@@ -138,14 +138,14 @@ export const tools: Tool[] = [
   { id: "csv-to-json", name: "CSV to JSON Converter", description: "Convert CSV data to JSON format.", category: "utility", icon: "Table" },
 
   // AI Tools
-  { id: "ai-essay-writer", name: "AI Essay Writer", description: "Generate well-structured essays on any topic using AI.", category: "ai-tools", icon: "PenLine", popular: true, apiRequired: "OpenAI API or similar LLM" },
-  { id: "ai-story-generator", name: "AI Story Generator", description: "Create creative stories with AI assistance.", category: "ai-tools", icon: "BookOpen", apiRequired: "OpenAI API or similar LLM" },
-  { id: "ai-email-writer", name: "AI Email Writer", description: "Draft professional emails with AI.", category: "ai-tools", icon: "Mail", apiRequired: "OpenAI API or similar LLM" },
-  { id: "ai-code-generator", name: "AI Code Generator", description: "Generate code snippets in any programming language.", category: "ai-tools", icon: "Code", apiRequired: "OpenAI API or similar LLM" },
+  { id: "ai-essay-writer", name: "AI Essay Writer", description: "Generate well-structured essays on any topic using AI.", category: "ai-tools", icon: "PenLine", popular: true, apiRequired: "Claude AI" },
+  { id: "ai-story-generator", name: "AI Story Generator", description: "Create creative stories with AI assistance.", category: "ai-tools", icon: "BookOpen", apiRequired: "Claude AI" },
+  { id: "ai-email-writer", name: "AI Email Writer", description: "Draft professional emails with AI.", category: "ai-tools", icon: "Mail", apiRequired: "Claude AI" },
+  { id: "ai-code-generator", name: "AI Code Generator", description: "Generate code snippets in any programming language.", category: "ai-tools", icon: "Code", apiRequired: "Claude AI" },
   { id: "ai-image-generator", name: "AI Image Generator", description: "Create images from text descriptions.", category: "ai-tools", icon: "ImagePlus", apiRequired: "DALL-E API or Stable Diffusion API" },
-  { id: "ai-chatbot", name: "AI Chatbot", description: "Interactive AI chatbot for various tasks.", category: "ai-tools", icon: "MessageSquare", apiRequired: "OpenAI API or similar LLM" },
-  { id: "ai-translator", name: "AI Translator", description: "Translate text between languages using AI.", category: "ai-tools", icon: "Languages", apiRequired: "OpenAI API or Google Translate API" },
-  { id: "ai-title-generator", name: "AI Title Generator", description: "Generate catchy titles and headlines with AI.", category: "ai-tools", icon: "Heading", apiRequired: "OpenAI API or similar LLM" },
+  { id: "ai-chatbot", name: "AI Chatbot", description: "Interactive AI chatbot for various tasks.", category: "ai-tools", icon: "MessageSquare", apiRequired: "Claude AI" },
+  { id: "ai-translator", name: "AI Translator", description: "Translate text between languages using AI.", category: "ai-tools", icon: "Languages", apiRequired: "Claude AI" },
+  { id: "ai-title-generator", name: "AI Title Generator", description: "Generate catchy titles and headlines with AI.", category: "ai-tools", icon: "Heading", apiRequired: "Claude AI" },
 ];
 
 export const popularTools = tools.filter((t) => t.popular);
